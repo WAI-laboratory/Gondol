@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */; };
+		15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */; };
+		15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0577273ABD2F005CA1D1 /* ViewController.swift */; };
+		15CD057B273ABD2F005CA1D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD0579273ABD2F005CA1D1 /* Main.storyboard */; };
+		15CD057D273ABD31005CA1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD057C273ABD31005CA1D1 /* Assets.xcassets */; };
+		15CD0580273ABD31005CA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD057E273ABD31005CA1D1 /* LaunchScreen.storyboard */; };
+		15CD058B273ABD31005CA1D1 /* GondolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD058A273ABD31005CA1D1 /* GondolTests.swift */; };
+		15CD0595273ABD31005CA1D1 /* GondolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0594273ABD31005CA1D1 /* GondolUITests.swift */; };
+		15CD0597273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0596273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift */; };
+		15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */; };
+		15CD05A9273ABE86005CA1D1 /* AddThen in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05A8273ABE86005CA1D1 /* AddThen */; };
+		15CD05AC273ABEB2005CA1D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05AB273ABEB2005CA1D1 /* SnapKit */; };
+		15CD05AF273AC885005CA1D1 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05AE273AC885005CA1D1 /* CombineCocoa */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15CD0587273ABD31005CA1D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CD0568273ABD2F005CA1D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15CD056F273ABD2F005CA1D1;
+			remoteInfo = Gondol;
+		};
+		15CD0591273ABD31005CA1D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CD0568273ABD2F005CA1D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15CD056F273ABD2F005CA1D1;
+			remoteInfo = Gondol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15CD0570273ABD2F005CA1D1 /* Gondol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gondol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		15CD0577273ABD2F005CA1D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15CD057A273ABD2F005CA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15CD057C273ABD31005CA1D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15CD057F273ABD31005CA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15CD0581273ABD31005CA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15CD0586273ABD31005CA1D1 /* GondolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GondolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CD058A273ABD31005CA1D1 /* GondolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GondolTests.swift; sourceTree = "<group>"; };
+		15CD0590273ABD31005CA1D1 /* GondolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GondolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CD0594273ABD31005CA1D1 /* GondolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GondolUITests.swift; sourceTree = "<group>"; };
+		15CD0596273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GondolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15CD056D273ABD2F005CA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CD05A9273ABE86005CA1D1 /* AddThen in Frameworks */,
+				15CD05AF273AC885005CA1D1 /* CombineCocoa in Frameworks */,
+				15CD05AC273ABEB2005CA1D1 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CD0583273ABD31005CA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CD058D273ABD31005CA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15CD0567273ABD2F005CA1D1 = {
+			isa = PBXGroup;
+			children = (
+				15CD0572273ABD2F005CA1D1 /* Gondol */,
+				15CD0589273ABD31005CA1D1 /* GondolTests */,
+				15CD0593273ABD31005CA1D1 /* GondolUITests */,
+				15CD0571273ABD2F005CA1D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15CD0571273ABD2F005CA1D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CD0570273ABD2F005CA1D1 /* Gondol.app */,
+				15CD0586273ABD31005CA1D1 /* GondolTests.xctest */,
+				15CD0590273ABD31005CA1D1 /* GondolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15CD0572273ABD2F005CA1D1 /* Gondol */ = {
+			isa = PBXGroup;
+			children = (
+				15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */,
+				15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */,
+				15CD0577273ABD2F005CA1D1 /* ViewController.swift */,
+				15CD0579273ABD2F005CA1D1 /* Main.storyboard */,
+				15CD057C273ABD31005CA1D1 /* Assets.xcassets */,
+				15CD057E273ABD31005CA1D1 /* LaunchScreen.storyboard */,
+				15CD0581273ABD31005CA1D1 /* Info.plist */,
+				15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */,
+			);
+			path = Gondol;
+			sourceTree = "<group>";
+		};
+		15CD0589273ABD31005CA1D1 /* GondolTests */ = {
+			isa = PBXGroup;
+			children = (
+				15CD058A273ABD31005CA1D1 /* GondolTests.swift */,
+			);
+			path = GondolTests;
+			sourceTree = "<group>";
+		};
+		15CD0593273ABD31005CA1D1 /* GondolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15CD0594273ABD31005CA1D1 /* GondolUITests.swift */,
+				15CD0596273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift */,
+			);
+			path = GondolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15CD056F273ABD2F005CA1D1 /* Gondol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15CD059A273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "Gondol" */;
+			buildPhases = (
+				15CD056C273ABD2F005CA1D1 /* Sources */,
+				15CD056D273ABD2F005CA1D1 /* Frameworks */,
+				15CD056E273ABD2F005CA1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gondol;
+			packageProductDependencies = (
+				15CD05A8273ABE86005CA1D1 /* AddThen */,
+				15CD05AB273ABEB2005CA1D1 /* SnapKit */,
+				15CD05AE273AC885005CA1D1 /* CombineCocoa */,
+			);
+			productName = Gondol;
+			productReference = 15CD0570273ABD2F005CA1D1 /* Gondol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15CD0585273ABD31005CA1D1 /* GondolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15CD059D273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "GondolTests" */;
+			buildPhases = (
+				15CD0582273ABD31005CA1D1 /* Sources */,
+				15CD0583273ABD31005CA1D1 /* Frameworks */,
+				15CD0584273ABD31005CA1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15CD0588273ABD31005CA1D1 /* PBXTargetDependency */,
+			);
+			name = GondolTests;
+			productName = GondolTests;
+			productReference = 15CD0586273ABD31005CA1D1 /* GondolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15CD058F273ABD31005CA1D1 /* GondolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15CD05A0273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "GondolUITests" */;
+			buildPhases = (
+				15CD058C273ABD31005CA1D1 /* Sources */,
+				15CD058D273ABD31005CA1D1 /* Frameworks */,
+				15CD058E273ABD31005CA1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15CD0592273ABD31005CA1D1 /* PBXTargetDependency */,
+			);
+			name = GondolUITests;
+			productName = GondolUITests;
+			productReference = 15CD0590273ABD31005CA1D1 /* GondolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15CD0568273ABD2F005CA1D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					15CD056F273ABD2F005CA1D1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					15CD0585273ABD31005CA1D1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 15CD056F273ABD2F005CA1D1;
+					};
+					15CD058F273ABD31005CA1D1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 15CD056F273ABD2F005CA1D1;
+					};
+				};
+			};
+			buildConfigurationList = 15CD056B273ABD2F005CA1D1 /* Build configuration list for PBXProject "Gondol" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15CD0567273ABD2F005CA1D1;
+			packageReferences = (
+				15CD05A7273ABE86005CA1D1 /* XCRemoteSwiftPackageReference "AddThen" */,
+				15CD05AA273ABEB2005CA1D1 /* XCRemoteSwiftPackageReference "Snapkit" */,
+				15CD05AD273AC885005CA1D1 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
+			productRefGroup = 15CD0571273ABD2F005CA1D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15CD056F273ABD2F005CA1D1 /* Gondol */,
+				15CD0585273ABD31005CA1D1 /* GondolTests */,
+				15CD058F273ABD31005CA1D1 /* GondolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15CD056E273ABD2F005CA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CD0580273ABD31005CA1D1 /* LaunchScreen.storyboard in Resources */,
+				15CD057D273ABD31005CA1D1 /* Assets.xcassets in Resources */,
+				15CD057B273ABD2F005CA1D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CD0584273ABD31005CA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CD058E273ABD31005CA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15CD056C273ABD2F005CA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */,
+				15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */,
+				15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */,
+				15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CD0582273ABD31005CA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CD058B273ABD31005CA1D1 /* GondolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15CD058C273ABD31005CA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CD0595273ABD31005CA1D1 /* GondolUITests.swift in Sources */,
+				15CD0597273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15CD0588273ABD31005CA1D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15CD056F273ABD2F005CA1D1 /* Gondol */;
+			targetProxy = 15CD0587273ABD31005CA1D1 /* PBXContainerItemProxy */;
+		};
+		15CD0592273ABD31005CA1D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15CD056F273ABD2F005CA1D1 /* Gondol */;
+			targetProxy = 15CD0591273ABD31005CA1D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15CD0579273ABD2F005CA1D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15CD057A273ABD2F005CA1D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15CD057E273ABD31005CA1D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15CD057F273ABD31005CA1D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15CD0598273ABD31005CA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15CD0599273ABD31005CA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15CD059B273ABD31005CA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gondol/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15CD059C273ABD31005CA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gondol/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15CD059E273ABD31005CA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.GondolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gondol.app/Gondol";
+			};
+			name = Debug;
+		};
+		15CD059F273ABD31005CA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.GondolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gondol.app/Gondol";
+			};
+			name = Release;
+		};
+		15CD05A1273ABD31005CA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.GondolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gondol;
+			};
+			name = Debug;
+		};
+		15CD05A2273ABD31005CA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.GondolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gondol;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15CD056B273ABD2F005CA1D1 /* Build configuration list for PBXProject "Gondol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CD0598273ABD31005CA1D1 /* Debug */,
+				15CD0599273ABD31005CA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15CD059A273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "Gondol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CD059B273ABD31005CA1D1 /* Debug */,
+				15CD059C273ABD31005CA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15CD059D273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "GondolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CD059E273ABD31005CA1D1 /* Debug */,
+				15CD059F273ABD31005CA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15CD05A0273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "GondolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CD05A1273ABD31005CA1D1 /* Debug */,
+				15CD05A2273ABD31005CA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15CD05A7273ABE86005CA1D1 /* XCRemoteSwiftPackageReference "AddThen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stareta1202/AddThen";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		15CD05AA273ABEB2005CA1D1 /* XCRemoteSwiftPackageReference "Snapkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/Snapkit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		15CD05AD273AC885005CA1D1 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15CD05A8273ABE86005CA1D1 /* AddThen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15CD05A7273ABE86005CA1D1 /* XCRemoteSwiftPackageReference "AddThen" */;
+			productName = AddThen;
+		};
+		15CD05AB273ABEB2005CA1D1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15CD05AA273ABEB2005CA1D1 /* XCRemoteSwiftPackageReference "Snapkit" */;
+			productName = SnapKit;
+		};
+		15CD05AE273AC885005CA1D1 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15CD05AD273AC885005CA1D1 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 15CD0568273ABD2F005CA1D1 /* Project object */;
+}
