@@ -20,14 +20,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabbarVC = UITabBarController()
         let converterVC = ConverterViewController()
+        let morserVC = MorseViewController()
 
         window = UIWindow(frame: scene.coordinateSpace.bounds)
         window?.windowScene = scene
 //        window?.rootViewController = UINavigationController(rootViewController: MainViewController())
         window?.rootViewController = tabbarVC
-        tabbarVC.setViewControllers([UINavigationController(rootViewController: converterVC)], animated: true)
-        converterVC.tabBarItem = UITabBarItem(title: "메모", image: UIImage(systemName: "pencil.circle"), selectedImage: UIImage(systemName: "pencil.circle.fill"))
-//        calVC.tabBarItem = UITabBarItem(title: "캘린더", image: UIImage(systemName: "calendar.circle"), selectedImage: UIImage(systemName: "calendar.circle.fill"))
+        tabbarVC.setViewControllers([UINavigationController(rootViewController: morserVC), converterVC], animated: true)
+        converterVC.tabBarItem = UITabBarItem(title: "converter", image: UIImage(systemName: "pencil.circle"), selectedImage: UIImage(systemName: "pencil.circle.fill"))
+        morserVC.tabBarItem = UITabBarItem(title: "translator", image: UIImage(systemName: "calendar.circle"), selectedImage: UIImage(systemName: "calendar.circle.fill"))
         window?.makeKeyAndVisible()
         window?.overrideUserInterfaceStyle = .light
     }

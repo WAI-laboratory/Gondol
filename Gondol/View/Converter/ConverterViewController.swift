@@ -18,7 +18,6 @@ class ConverterViewController: UIViewController {
 
     private var segmentArray: [String] = []
     
-    
     private var textField = UITextField()
     private var label = UILabel()
     private lazy var segment = UISegmentedControl(items: segmentArray)

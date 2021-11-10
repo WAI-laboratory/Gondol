@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4DE273BA0150025595F /* ConverterViewModel.swift */; };
+		12BEC4E1273BB2B30025595F /* MorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4E0273BB2B30025595F /* MorseViewController.swift */; };
+		12BEC4E4273C14A70025595F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4E3273C14A70025595F /* Color.swift */; };
+		12BEC4E9273C1C540025595F /* MorseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4E8273C1C540025595F /* MorseViewModel.swift */; };
 		15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */; };
 		15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */; };
 		15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0577273ABD2F005CA1D1 /* ViewController.swift */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		12BEC4DE273BA0150025595F /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
+		12BEC4E0273BB2B30025595F /* MorseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseViewController.swift; sourceTree = "<group>"; };
+		12BEC4E3273C14A70025595F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		12BEC4E8273C1C540025595F /* MorseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseViewModel.swift; sourceTree = "<group>"; };
 		15CD0570273ABD2F005CA1D1 /* Gondol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gondol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12BEC4E2273C14930025595F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				12BEC4E3273C14A70025595F /* Color.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		12BEC4E5273C14F40025595F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12BEC4E7273C15050025595F /* Morser */,
+				12BEC4E6273C14FD0025595F /* Converter */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12BEC4E6273C14FD0025595F /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */,
+				12BEC4DE273BA0150025595F /* ConverterViewModel.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		12BEC4E7273C15050025595F /* Morser */ = {
+			isa = PBXGroup;
+			children = (
+				12BEC4E0273BB2B30025595F /* MorseViewController.swift */,
+				12BEC4E8273C1C540025595F /* MorseViewModel.swift */,
+			);
+			path = Morser;
+			sourceTree = "<group>";
+		};
 		15CD0567273ABD2F005CA1D1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +150,8 @@
 		15CD0572273ABD2F005CA1D1 /* Gondol */ = {
 			isa = PBXGroup;
 			children = (
+				12BEC4E5273C14F40025595F /* View */,
+				12BEC4E2273C14930025595F /* Util */,
 				15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */,
 				15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */,
 				15CD0577273ABD2F005CA1D1 /* ViewController.swift */,
@@ -116,8 +159,6 @@
 				15CD057C273ABD31005CA1D1 /* Assets.xcassets */,
 				15CD057E273ABD31005CA1D1 /* LaunchScreen.storyboard */,
 				15CD0581273ABD31005CA1D1 /* Info.plist */,
-				15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */,
-				12BEC4DE273BA0150025595F /* ConverterViewModel.swift */,
 			);
 			path = Gondol;
 			sourceTree = "<group>";
@@ -281,10 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */,
+				12BEC4E9273C1C540025595F /* MorseViewModel.swift in Sources */,
 				12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */,
+				12BEC4E4273C14A70025595F /* Color.swift in Sources */,
 				15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */,
 				15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */,
 				15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */,
+				12BEC4E1273BB2B30025595F /* MorseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
