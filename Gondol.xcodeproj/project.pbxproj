@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4DE273BA0150025595F /* ConverterViewModel.swift */; };
 		15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */; };
 		15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */; };
 		15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0577273ABD2F005CA1D1 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12BEC4DE273BA0150025595F /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
 		15CD0570273ABD2F005CA1D1 /* Gondol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gondol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CD0573273ABD2F005CA1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15CD0575273ABD2F005CA1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				15CD057E273ABD31005CA1D1 /* LaunchScreen.storyboard */,
 				15CD0581273ABD31005CA1D1 /* Info.plist */,
 				15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */,
+				12BEC4DE273BA0150025595F /* ConverterViewModel.swift */,
 			);
 			path = Gondol;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */,
+				12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */,
 				15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */,
 				15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */,
 				15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */,
