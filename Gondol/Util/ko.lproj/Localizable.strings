@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Gondol
+
+  Created by 이용준 on 2021/11/12.
+  
+*/
+"Braille" = "점자";
+"braille" = "점자";
+"Morse" = "모스";
+"morse" = "모스";
+"mTitle" = "모스 부호";
+"EnterNumber" = "숫자 입력해주세요!";
+"EnterWords" = "입력해주세요~~";
+
+"copy" = "복사하기";
+"clear" = "지우기";
+
+"copied" = "복사되었습니다!";
+
+"wordsCount" = "글자수";
+"wordsUnder30" = "흠.. 글자수";
+"wordsMany" = "글자수 넘마나영";

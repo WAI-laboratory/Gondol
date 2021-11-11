@@ -19,7 +19,7 @@ class BrailleViewModel: ObservableObject {
     init () {
         Publishers.CombineLatest($selectedSegment, $text)
             .map { _selectedSegment, _title -> String in
-                guard let _title = _title else { return "숫자를 입력해주세요!"}
+                guard let _title = _title else { return ""}
                 var _resultText = ""
                 switch _selectedSegment {
                 case .Korean:

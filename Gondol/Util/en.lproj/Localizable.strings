@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Gondol
+
+  Created by 이용준 on 2021/11/12.
+  
+*/
+"Braille" = "Braille";
+"braille" = "braille";
+"Morse" = "Morse";
+"morse" = "morse";
+"mTitle" = "Morse";
+
+
+"EnterNumber" = "Please Enter Numbers :)";
+"EnterWords" = "Please Enter:)";
+
+"copy" = "Copy";
+"clear" = "Clear";
+
+"copied" = "Copied!";
+
+"wordsCount" = "Number of characters";
+"wordsUnder30" = "Hm.. Count ";
+"wordsMany" = "*.* Too Many";

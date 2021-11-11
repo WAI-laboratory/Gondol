@@ -30,7 +30,7 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "점자"
+//        self.title = "Braille".localized
         view.backgroundColor = .clubhouseBackground
         textView.delegate = self
         initView()
@@ -46,9 +46,9 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             $0.lineBreakMode = .byWordWrapping
 
             $0.snp.makeConstraints { make in
-                make.top.equalToSuperview().offset(96)
+                make.top.equalToSuperview().offset(32)
                 make.leading.trailing.equalToSuperview().inset(32)
-                make.height.equalTo(256)
+                make.height.equalTo(120)
             }
         }
         view.add(segment) {
@@ -69,13 +69,13 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
                 make.height.equalTo(32)
             }
             $0.addArranged(self.copyButton) { [unowned self] in
-                $0.setTitle("복사하기", for: .normal)
+                $0.setTitle("copy".localized, for: .normal)
                 $0.setTitleColor(.secondaryLabel, for: .normal)
                 $0.addTarget(self, action: #selector(self.copyText(_:)), for: .touchUpInside)
             }
             
             $0.addArranged(self.clearButton) { [unowned self] in
-                $0.setTitle("지우기", for: .normal)
+                $0.setTitle("clear".localized, for: .normal)
                 $0.setTitleColor(.secondaryLabel, for: .normal)
                 $0.addTarget(self, action: #selector(self.clearText(_:)), for: .touchUpInside)
             }
@@ -105,7 +105,7 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             $0.font = .systemFont(ofSize: 16, weight: .medium)
             $0.textColor = .lightGray
             $0.textAlignment = .center
-            $0.text = "입력해주세요"
+            $0.text = "EnterWords".localized
             $0.snp.makeConstraints { make in
                 make.top.leading.trailing.equalTo(self.textView).inset(8)
             }
@@ -133,11 +133,11 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             .map({ text -> String in
                 guard let text = text else { return ""}
                 if text.count < 30 {
-                    return "글자수: \(text.count)"
+                    return "\("wordsCount".localized): \(text.count)"
                 } else if text.count < 60 {
-                    return "흠..? 글자수: \(text.count )"
+                    return "\("wordsUnder30".localized): \(text.count )"
                 } else {
-                    return "넘많아!!!"
+                    return "wordsMany".localized
                 }
             })
             .assign(to: \.text, on: self.subLabel)
