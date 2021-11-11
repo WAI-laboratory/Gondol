@@ -32,8 +32,8 @@ class MorseViewModel: ObservableObject {
                 guard let text = text else { return " 지원 ㄴㄴ"}
                 var resultText = ""
                 for i in text {
-                    guard let letter = letterToMorse[String(i).lowercased()] else { return "지원하지 않아요"}
-                    resultText = resultText + letter + " "
+                    guard let letter = letterToMorse[String(i).lowercased()] else { continue }
+                    resultText = resultText + letter + "  "
                 }
                 return resultText
             }
@@ -46,32 +46,43 @@ class MorseViewModel: ObservableObject {
 
 
 var letterToMorse: [String: String] = [
-  "a": ".-",
-  "b": "-...",
-  "c": "-.-.",
-  "d": "-..",
-  "e": ".",
-  "f": "..-.",
-  "g": "--.",
-  "h": "....",
-  "i": "..",
-  "j": ".---",
-  "k": "-.-",
-  "l": ".-..",
-  "m": "--",
-  "n": "-.",
-  "o": "---",
-  "p": ".--.",
-  "q": "--.-",
-  "r": ".-.",
-  "s": "...",
-  "t": "-",
-  "u": "..-",
-  "v": "...-",
-  "w": ".--",
-  "x": "-..-",
-  "y": "-.--",
-  "z": "--..",
+  "a": "· –",
+  "b": "– · · ·",
+  "c": "– · – ·",
+  "d": "– · ·",
+  "e": "·",
+  "f": "· · – ·",
+  "g": "· · – ·",
+  "h": "· · · ·",
+  "i": "· ·",
+  "j": "· – – –",
+  "k": "– · –",
+  "l": "· – · ·",
+  "m": "– –",
+  "n": "– ·",
+  "o": "– – –",
+  "p": "· – – · ",
+  "q": "– – · –",
+  "r": "· – ·",
+  "s": "· · · ",
+  "t": "–",
+  "u": "· · –",
+  "v": "· · · –",
+  "w": "· – –",
+  "x": "– · · –",
+  "y": "– · – –",
+  "z": "– – · ·",
   " ": " ",
-  "  ": "  ",
+  ".": " ",
+  "1": "· – – – –",
+  "2": "· · – – –",
+  "3": "· · · – –",
+  "4": "· · · · –",
+  "5": "· · · · ·",
+  "6": "– · · · ·",
+  "7": "– – · · ·",
+  "8": "– – – · ·",
+  "9": "– – – – ·",
+  "0": "– – – – –",
+  "\n": "\n"
 ]
