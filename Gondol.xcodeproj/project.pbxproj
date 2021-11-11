@@ -24,6 +24,11 @@
 		15CD05A9273ABE86005CA1D1 /* AddThen in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05A8273ABE86005CA1D1 /* AddThen */; };
 		15CD05AC273ABEB2005CA1D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05AB273ABEB2005CA1D1 /* SnapKit */; };
 		15CD05AF273AC885005CA1D1 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05AE273AC885005CA1D1 /* CombineCocoa */; };
+		15CD05B2273D696D005CA1D1 /* Jamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B1273D696D005CA1D1 /* Jamo.swift */; };
+		15CD05B4273D69A8005CA1D1 /* BrailleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B3273D69A8005CA1D1 /* BrailleViewController.swift */; };
+		15CD05B6273D6E03005CA1D1 /* Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B5273D6E03005CA1D1 /* Morse.swift */; };
+		15CD05B8273D6F65005CA1D1 /* Braille.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B7273D6F65005CA1D1 /* Braille.swift */; };
+		15CD05BA273D77D9005CA1D1 /* BrailleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B9273D77D9005CA1D1 /* BrailleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,11 @@
 		15CD0594273ABD31005CA1D1 /* GondolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GondolUITests.swift; sourceTree = "<group>"; };
 		15CD0596273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GondolUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		15CD05B1273D696D005CA1D1 /* Jamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jamo.swift; sourceTree = "<group>"; };
+		15CD05B3273D69A8005CA1D1 /* BrailleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleViewController.swift; sourceTree = "<group>"; };
+		15CD05B5273D6E03005CA1D1 /* Morse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morse.swift; sourceTree = "<group>"; };
+		15CD05B7273D6F65005CA1D1 /* Braille.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Braille.swift; sourceTree = "<group>"; };
+		15CD05B9273D77D9005CA1D1 /* BrailleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				12BEC4E3273C14A70025595F /* Color.swift */,
+				15CD05B1273D696D005CA1D1 /* Jamo.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 		12BEC4E5273C14F40025595F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15CD05B0273D650E005CA1D1 /* Braille */,
 				12BEC4E7273C15050025595F /* Morser */,
 				12BEC4E6273C14FD0025595F /* Converter */,
 			);
@@ -123,6 +135,7 @@
 			children = (
 				12BEC4E0273BB2B30025595F /* MorseViewController.swift */,
 				12BEC4E8273C1C540025595F /* MorseViewModel.swift */,
+				15CD05B5273D6E03005CA1D1 /* Morse.swift */,
 			);
 			path = Morser;
 			sourceTree = "<group>";
@@ -178,6 +191,16 @@
 				15CD0596273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift */,
 			);
 			path = GondolUITests;
+			sourceTree = "<group>";
+		};
+		15CD05B0273D650E005CA1D1 /* Braille */ = {
+			isa = PBXGroup;
+			children = (
+				15CD05B3273D69A8005CA1D1 /* BrailleViewController.swift */,
+				15CD05B7273D6F65005CA1D1 /* Braille.swift */,
+				15CD05B9273D77D9005CA1D1 /* BrailleViewModel.swift */,
+			);
+			path = Braille;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,12 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CD05B4273D69A8005CA1D1 /* BrailleViewController.swift in Sources */,
 				15CD0578273ABD2F005CA1D1 /* ViewController.swift in Sources */,
 				12BEC4E9273C1C540025595F /* MorseViewModel.swift in Sources */,
 				12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */,
 				12BEC4E4273C14A70025595F /* Color.swift in Sources */,
 				15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */,
+				15CD05BA273D77D9005CA1D1 /* BrailleViewModel.swift in Sources */,
 				15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */,
+				15CD05B8273D6F65005CA1D1 /* Braille.swift in Sources */,
+				15CD05B6273D6E03005CA1D1 /* Morse.swift in Sources */,
+				15CD05B2273D696D005CA1D1 /* Jamo.swift in Sources */,
 				15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */,
 				12BEC4E1273BB2B30025595F /* MorseViewController.swift in Sources */,
 			);

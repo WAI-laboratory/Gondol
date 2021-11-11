@@ -1,15 +1,17 @@
 //
-//  MorseViewController.swift
+//  BrailleViewController.swift
 //  Gondol
 //
-//  Created by JYG on 2021/11/10.
+//  Created by 이용준 on 2021/11/12.
 //
 
+import Foundation
 import UIKit
 import Combine
 import CombineCocoa
 
-class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+
+class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     private var subscription = Set<AnyCancellable>()
 
     private var label = UILabel()
@@ -20,7 +22,7 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     private var copyButton = UIButton()
     private var clearButton = UIButton()
     private var textView = UITextView()
-    private var viewModel = MorseViewModel()
+    private var viewModel = BrailleViewModel()
     
     private var segmentArray: [String] = ["Korean", "English"]
     private lazy var segment = UISegmentedControl(items: segmentArray)
@@ -28,7 +30,7 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "모스부호"
+        self.title = "점자"
         view.backgroundColor = .clubhouseBackground
         textView.delegate = self
         initView()
