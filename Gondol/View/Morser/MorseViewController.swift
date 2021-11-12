@@ -46,27 +46,18 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             $0.lineBreakMode = .byWordWrapping
 
             $0.snp.makeConstraints { make in
-                make.top.equalToSuperview().offset(32)
+                make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
                 make.leading.trailing.equalToSuperview().inset(32)
-                make.height.equalTo(120)
+                make.height.equalToSuperview().multipliedBy(0.25)
             }
-        }
-        view.add(segment) {
-            $0.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 16, weight: .medium)], for: .normal)
-            $0.snp.makeConstraints { make in
-                make.top.equalTo(self.label.snp.bottom).offset(16)
-                make.trailing.leading.equalTo(self.label)
-                make.height.equalTo(32)
-            }
-            $0.selectedSegmentIndex = 0
         }
         
         view.add(buttonStackView) { [unowned self] in
             $0.distribution = .fillEqually
             $0.snp.makeConstraints { make in
-                make.top.equalTo(self.segment.snp.bottom).offset(16)
+                make.top.equalTo(self.label.snp.bottom).offset(12)
                 make.trailing.leading.equalToSuperview().inset(64)
-                make.height.equalTo(32)
+                make.height.equalTo(24)
             }
             $0.addArranged(self.copyButton) { [unowned self] in
                 $0.setTitle("copy".localized, for: .normal)
@@ -85,9 +76,9 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             $0.textAlignment = .center
             $0.font = .systemFont(ofSize: 14, weight: .medium)
             $0.snp.makeConstraints { make in
-                make.top.equalTo(self.buttonStackView.snp.bottom).offset(16)
+                make.top.equalTo(self.buttonStackView.snp.bottom).offset(12)
                 make.leading.trailing.equalTo(self.label)
-                make.height.equalTo(32)
+                make.height.equalTo(24)
             }
         }
         
@@ -98,7 +89,7 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.subLabel.snp.bottom)
                 make.leading.trailing.equalTo(self.label)
-                make.height.equalTo(196)
+                make.height.equalToSuperview().multipliedBy(0.25)
             }
         }
         view.add(fakeLabel) {
@@ -109,6 +100,16 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             $0.snp.makeConstraints { make in
                 make.top.leading.trailing.equalTo(self.textView).inset(8)
             }
+        }
+        
+        view.add(segment) {
+            $0.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 16, weight: .medium)], for: .normal)
+            $0.snp.makeConstraints { make in
+                make.top.equalTo(self.textView.snp.bottom).offset(12)
+                make.trailing.leading.equalTo(self.label)
+                make.height.equalTo(32)
+            }
+            $0.selectedSegmentIndex = 0
         }
     }
     
