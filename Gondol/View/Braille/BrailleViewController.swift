@@ -30,7 +30,11 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.title = "Braille".localized
+        navigationItem.title = "Braille".localized
+        navigationItem.largeTitleDisplayMode = .automatic
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.presentSearch(_:)))
         view.backgroundColor = .clubhouseBackground
         textView.delegate = self
         initView()
@@ -38,13 +42,10 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     }
     
     private func initView() {
-        view.add(label) {
+        view.add(textView) { [unowned self] in
+            $0.font = .systemFont(ofSize: 20, weight: .light)
+            $0.layer.cornerRadius = 8
             $0.backgroundColor = .white
-            $0.clipsToBounds = true
-            $0.numberOfLines = 0
-            $0.layer.cornerRadius = 32
-            $0.lineBreakMode = .byWordWrapping
-
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
                 make.leading.trailing.equalToSuperview().inset(32)
@@ -52,11 +53,10 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             }
         }
 
-        
         view.add(buttonStackView) { [unowned self] in
             $0.distribution = .fillEqually
             $0.snp.makeConstraints { make in
-                make.top.equalTo(self.label.snp.bottom).offset(12)
+                make.top.equalTo(self.textView.snp.bottom).offset(12)
                 make.trailing.leading.equalToSuperview().inset(64)
                 make.height.equalTo(24)
             }
@@ -78,21 +78,25 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             $0.font = .systemFont(ofSize: 14, weight: .medium)
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.buttonStackView.snp.bottom).offset(12)
-                make.leading.trailing.equalTo(self.label)
+                make.leading.trailing.equalTo(self.textView)
                 make.height.equalTo(24)
             }
         }
         
-        view.add(textView) { [unowned self] in
-            $0.font = .systemFont(ofSize: 20, weight: .light)
-            $0.layer.cornerRadius = 8
+        view.add(label) {
             $0.backgroundColor = .white.withAlphaComponent(0.4)
+            $0.clipsToBounds = true
+            $0.numberOfLines = 0
+            $0.layer.cornerRadius = 32
+            $0.lineBreakMode = .byWordWrapping
+
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.subLabel.snp.bottom)
-                make.leading.trailing.equalTo(self.label)
+                make.leading.trailing.equalTo(self.textView)
                 make.height.equalToSuperview().multipliedBy(0.25)
             }
         }
+        
         view.add(fakeLabel) {
             $0.font = .systemFont(ofSize: 16, weight: .medium)
             $0.textColor = .lightGray
@@ -105,8 +109,8 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         view.add(segment) {
             $0.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 16, weight: .medium)], for: .normal)
             $0.snp.makeConstraints { make in
-                make.top.equalTo(self.textView.snp.bottom).offset(12)
-                make.trailing.leading.equalTo(self.label)
+                make.top.equalTo(self.label.snp.bottom).offset(12)
+                make.trailing.leading.equalTo(self.textView)
                 make.height.equalTo(32)
             }
             $0.selectedSegmentIndex = 0
@@ -133,9 +137,9 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         viewModel.$text
             .map({ text -> String in
                 guard let text = text else { return ""}
-                if text.count < 30 {
+                if text.count < 12 {
                     return "\("wordsCount".localized): \(text.count)"
-                } else if text.count < 60 {
+                } else if text.count < 30 {
                     return "\("wordsUnder30".localized): \(text.count )"
                 } else {
                     return "wordsMany".localized
@@ -179,5 +183,11 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         } else {
             UIPasteboard.general.string = ""
         }
+    }
+    
+    @objc
+    func presentSearch(_ sender: UIBarButtonItem) {
+        self.present(BrailleTableViewController(), animated: true, completion: nil)
+//        UINavigationController(
     }
 }
