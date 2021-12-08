@@ -23,16 +23,16 @@ class ConverterViewModel: ObservableObject {
     private func setValues() {
         Publishers.CombineLatest($selectedSegment, $title)
             .map { [unowned self] _selectedSegment, _title -> String in
-                guard let _title = _title else { return "숫자를 입력해주세요!"}
+                guard let _title = _title else { return "EnterNumber".localized}
                 switch _selectedSegment {
                 case .Ascii:
                     let a = self.stringToAsciiStrings(_title).joined(separator: "")
                     return a
                 case .Hex:
-                    guard let number = Int(_title) else { return "숫자 입력해라"}
+                    guard let number = Int(_title) else { return "EnterNumber".localized}
                     return String(number, radix: 16)
                 case .Binary:
-                    guard let number = Int(_title) else { return "숫자 입력해라"}
+                    guard let number = Int(_title) else { return "EnterNumber".localized}
                     return String(number, radix: 2)
                 }
             }
@@ -40,8 +40,8 @@ class ConverterViewModel: ObservableObject {
     }
     
     private func stringToAsciiStrings(_ text: String?) -> [String] {
-        guard let title = text else { return ["숫자 입력해주세요"] }
-        if title == "" { return ["숫자 입력해주세요"] }
+        guard let title = text else { return ["EnterNumber".localized] }
+        if title == "" { return ["EnterNumber".localized] }
         var arr: [String] = []
         for i in title.utf8 {
             arr.append(String(i))

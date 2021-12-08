@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabbarVC = UITabBarController()
         let converterVC = ConverterViewController()
+        converterVC.title = "Converter".localized
         let morserVC = MorseViewController()
         morserVC.title = "Morse".localized
         let brailleVC = BrailleViewController()
@@ -29,12 +30,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = scene
         window?.rootViewController = tabbarVC
 
-        converterVC.tabBarItem = UITabBarItem(title: "Converter", image: UIImage(systemName: "lasso"), selectedImage: UIImage(systemName: "lasso.sparkles"))
+        converterVC.tabBarItem = UITabBarItem(title: "Converter".localized, image: UIImage(systemName: "lasso"), selectedImage: UIImage(systemName: "lasso.sparkles"))
         morserVC.tabBarItem = UITabBarItem(title: "Morse".localized, image: UIImage(systemName: "chevron.left.slash.chevron.right"), selectedImage: UIImage(systemName: "chevron.left.slash.chevron.right"))
         brailleVC.tabBarItem = UITabBarItem(title: "Braille".localized, image: UIImage(systemName: "hand.point.up.braille"), selectedImage: UIImage(systemName: "hand.point.up.braille.fill"))
         tabbarVC.setViewControllers([
             UINavigationController(rootViewController: brailleVC),
-            UINavigationController(rootViewController: morserVC), ], animated: true)
+            UINavigationController(rootViewController: morserVC),
+            UINavigationController(rootViewController: converterVC)
+        ], animated: true)
         window?.makeKeyAndVisible()
         window?.overrideUserInterfaceStyle = .light
     }

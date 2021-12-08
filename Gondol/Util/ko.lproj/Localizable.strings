@@ -13,6 +13,9 @@
 "EnterNumber" = "숫자 입력해주세요!";
 "EnterWords" = "입력해주세요~~";
 
+"Converter" = "숫자 변환기";
+"converter" = "숫자 변환기";
+
 "copy" = "복사하기";
 "clear" = "지우기";
 

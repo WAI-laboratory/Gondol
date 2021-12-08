@@ -24,17 +24,20 @@ class ConverterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+//        title = "To Number(Decimal)"
+        navigationItem.largeTitleDisplayMode = .automatic
+        navigationController?.navigationBar.prefersLargeTitles = true
+        view.backgroundColor = .clubhouseBackground
         initView()
         bind()
     }
     
     private func initView() {
         view.add(textField) {
-            $0.backgroundColor = .yellow
+            $0.backgroundColor = .white
             $0.keyboardType = .numbersAndPunctuation
             $0.snp.makeConstraints { make in
-                make.top.equalToSuperview().offset(120)
+                make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
                 make.trailing.leading.equalToSuperview().inset(64)
                 make.height.equalTo(32)
             }

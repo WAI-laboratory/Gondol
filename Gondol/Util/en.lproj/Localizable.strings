@@ -10,6 +10,8 @@
 "Morse" = "Morse";
 "morse" = "morse";
 "mTitle" = "Morse";
+"Converter" = "Converter";
+"converter" = "converter";
 
 
 "EnterNumber" = "Please Enter Numbers :)";
