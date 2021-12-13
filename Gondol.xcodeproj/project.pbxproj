@@ -33,6 +33,11 @@
 		15CD05BA273D77D9005CA1D1 /* BrailleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B9273D77D9005CA1D1 /* BrailleViewModel.swift */; };
 		15CD05BD273D7BFE005CA1D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15CD05BF273D7BFE005CA1D1 /* Localizable.strings */; };
 		15CD05C4273D7CBE005CA1D1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05C3273D7CBE005CA1D1 /* String+Extension.swift */; };
+		15E09DD7276784F900F9B858 /* ScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DD6276784F900F9B858 /* ScienceViewController.swift */; };
+		15E09DD92767853C00F9B858 /* ScienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DD82767853C00F9B858 /* ScienceViewModel.swift */; };
+		15E09DDB2767861600F9B858 /* PeriodicTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DDA2767861600F9B858 /* PeriodicTableModel.swift */; };
+		15E09DDF2767890C00F9B858 /* PeriodicTable.json in Resources */ = {isa = PBXBuildFile; fileRef = 15E09DDE2767890C00F9B858 /* PeriodicTable.json */; };
+		15E09DE127678EB700F9B858 /* ScienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DE027678EB700F9B858 /* ScienceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,11 @@
 		15CD05C1273D7C40005CA1D1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		15CD05C2273D7C41005CA1D1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		15CD05C3273D7CBE005CA1D1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		15E09DD6276784F900F9B858 /* ScienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceViewController.swift; sourceTree = "<group>"; };
+		15E09DD82767853C00F9B858 /* ScienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceViewModel.swift; sourceTree = "<group>"; };
+		15E09DDA2767861600F9B858 /* PeriodicTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableModel.swift; sourceTree = "<group>"; };
+		15E09DDE2767890C00F9B858 /* PeriodicTable.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PeriodicTable.json; sourceTree = "<group>"; };
+		15E09DE027678EB700F9B858 /* ScienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,7 @@
 		12BEC4E5273C14F40025595F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15E09DD5276784D000F9B858 /* Science */,
 				15CD05B0273D650E005CA1D1 /* Braille */,
 				12BEC4E7273C15050025595F /* Morser */,
 				12BEC4E6273C14FD0025595F /* Converter */,
@@ -224,6 +235,18 @@
 				15CD05B9273D77D9005CA1D1 /* BrailleViewModel.swift */,
 			);
 			path = Braille;
+			sourceTree = "<group>";
+		};
+		15E09DD5276784D000F9B858 /* Science */ = {
+			isa = PBXGroup;
+			children = (
+				15E09DD6276784F900F9B858 /* ScienceViewController.swift */,
+				15E09DD82767853C00F9B858 /* ScienceViewModel.swift */,
+				15E09DDA2767861600F9B858 /* PeriodicTableModel.swift */,
+				15E09DDE2767890C00F9B858 /* PeriodicTable.json */,
+				15E09DE027678EB700F9B858 /* ScienceView.swift */,
+			);
+			path = Science;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +367,7 @@
 				15CD0580273ABD31005CA1D1 /* LaunchScreen.storyboard in Resources */,
 				15CD05BD273D7BFE005CA1D1 /* Localizable.strings in Resources */,
 				15CD057D273ABD31005CA1D1 /* Assets.xcassets in Resources */,
+				15E09DDF2767890C00F9B858 /* PeriodicTable.json in Resources */,
 				15CD057B273ABD2F005CA1D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,14 +398,18 @@
 				12BEC4E9273C1C540025595F /* MorseViewModel.swift in Sources */,
 				12776BE3273F8F4E009F2B02 /* Dictionary+Extension.swift in Sources */,
 				12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */,
+				15E09DE127678EB700F9B858 /* ScienceView.swift in Sources */,
 				12BEC4E4273C14A70025595F /* Color.swift in Sources */,
 				15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */,
 				12776BE1273F8BC8009F2B02 /* BrailleTableViewController.swift in Sources */,
 				15CD05BA273D77D9005CA1D1 /* BrailleViewModel.swift in Sources */,
+				15E09DD7276784F900F9B858 /* ScienceViewController.swift in Sources */,
 				15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */,
+				15E09DD92767853C00F9B858 /* ScienceViewModel.swift in Sources */,
 				15CD05C4273D7CBE005CA1D1 /* String+Extension.swift in Sources */,
 				15CD05B8273D6F65005CA1D1 /* Braille.swift in Sources */,
 				15CD05B6273D6E03005CA1D1 /* Morse.swift in Sources */,
+				15E09DDB2767861600F9B858 /* PeriodicTableModel.swift in Sources */,
 				15CD05B2273D696D005CA1D1 /* Jamo.swift in Sources */,
 				15CD0576273ABD2F005CA1D1 /* SceneDelegate.swift in Sources */,
 				12BEC4E1273BB2B30025595F /* MorseViewController.swift in Sources */,
@@ -575,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VZTRDYYN8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gondol/Info.plist;
@@ -589,7 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -604,7 +632,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VZTRDYYN8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gondol/Info.plist;
@@ -618,7 +646,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

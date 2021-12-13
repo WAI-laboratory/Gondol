@@ -24,3 +24,30 @@
 "wordsCount" = "글자수";
 "wordsUnder30" = "흠.. 글자수";
 "wordsMany" = "글자수 넘마나영";
+
+"atomicNumber" = "원자 번호";
+"symbol" = "원소 기호";
+"name" = "이름";
+"atomicMass" = "원자량";
+"electronicConfiguration" = "전자 배치";
+"electronegativity" = "전기 음성도";
+"atomicRadius" = "원자 반지름";
+"ionRadius" = "이온 반지름";
+"vanDerWaalsRadius" = "반데르발스 반지름";
+"ionizationEnergy" = "이온화 에너지";
+"electronAffinity" = "전자 친화도";
+"oxidationStates" = "산화수";
+"standardState" = "표준 상태";
+"bondingType" = "결합 상태";
+"meltingPoint" = "녹는점";
+"boilingPoint" = "끓는점";
+"density" = "밀도";
+"groupBlock" = "분류";
+"yearDiscovered" = "발견된 년도";
+"block" = "Block";
+"cpkHexColor" = "CPK Hex Color";
+"period" = "주기";
+"group" = "족";
+
+"Science" = "과학";
+"EnterChem" = "원소기호나 원자번호 입력해주세요";

@@ -25,3 +25,30 @@
 "wordsCount" = "Number of characters";
 "wordsUnder30" = "Hm.. Count ";
 "wordsMany" = "*.* Too Many";
+
+"atomicNumber" = "Atomic Number";
+"symbol" = "Symbol";
+"name" = "Name";
+"atomicMass" = "Atomic Mass";
+"electronicConfiguration" = "Electronic Configuration";
+"electronegativity" = "Electro Negativity";
+"atomicRadius" = "Atomic Radius";
+"ionRadius" = "Ionic Radius";
+"vanDerWaalsRadius" = "Van Der Waals Radius";
+"ionizationEnergy" = "Ionization Energy";
+"electronAffinity" = "Electron Affinity";
+"oxidationStates" = "Oxidation States";
+"standardState" = "Standard State";
+"bondingType" = "Bonding Type";
+"meltingPoint" = "Melting Point";
+"boilingPoint" = "Boiling Point";
+"density" = "Density";
+"groupBlock" = "Group Block";
+"yearDiscovered" = "Year Discovered";
+"block" = "Block";
+"cpkHexColor" = "CPK Hex Color";
+"period" = "Period";
+"group" = "Group";
+
+"Science" = "Science";
+"EnterChem" = "Enter Atomic symbol or number";

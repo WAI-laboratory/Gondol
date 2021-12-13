@@ -24,7 +24,6 @@ class ConverterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        title = "To Number(Decimal)"
         navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .clubhouseBackground
@@ -34,6 +33,8 @@ class ConverterViewController: UIViewController {
     
     private func initView() {
         view.add(textField) {
+            $0.layer.masksToBounds = true
+            $0.layer.cornerRadius = 4
             $0.backgroundColor = .white
             $0.keyboardType = .numbersAndPunctuation
             $0.snp.makeConstraints { make in
