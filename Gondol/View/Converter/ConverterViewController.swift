@@ -11,8 +11,10 @@ import SnapKit
 import AddThen
 import Combine
 import CombineCocoa
+import GoogleMobileAds
 
-class ConverterViewController: UIViewController {
+
+class ConverterViewController: UIViewController, GADBannerViewDelegate {
     private var viewModel = ConverterViewModel()
     private var subscription = Set<AnyCancellable>()
 
@@ -20,13 +22,20 @@ class ConverterViewController: UIViewController {
     
     private var textField = UITextField()
     private var label = UILabel()
+    private var secondaryLabel = UILabel()
     private lazy var segment = UISegmentedControl(items: segmentArray)
+    private var bannerView = GADBannerView()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .clubhouseBackground
+        bannerView.adUnitID = "ca-app-pub-4294379690418901/5357758608"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
         initView()
         bind()
     }
@@ -65,6 +74,14 @@ class ConverterViewController: UIViewController {
                 make.height.equalTo(32)
             }
             $0.selectedSegmentIndex = 0
+        }
+        
+        view.add(bannerView) {
+            $0.snp.makeConstraints { make in
+                make.leading.trailing.equalToSuperview().inset(16)
+                make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+                make.height.equalTo(64)
+            }
         }
     }
     

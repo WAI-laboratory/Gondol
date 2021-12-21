@@ -1,0 +1,6 @@
+framework module Pods_Gondol_GondolUITests {
+  umbrella header "Pods-Gondol-GondolUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

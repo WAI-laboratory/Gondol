@@ -3,15 +3,15 @@
 //  Gondol
 //
 //  Created by 이용준 on 2021/11/12.
-//
+// ca-app-pub-4294379690418901~4427820316
 
 import Foundation
 import UIKit
 import Combine
 import CombineCocoa
+import GoogleMobileAds
 
-
-class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, GADBannerViewDelegate {
     private var subscription = Set<AnyCancellable>()
 
     private var label = UILabel()
@@ -23,6 +23,7 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     private var clearButton = UIButton()
     private var textView = UITextView()
     private var viewModel = BrailleViewModel()
+    private var bannerView = GADBannerView()
     
     private var segmentArray: [String] = ["Korean", "English"]
     private lazy var segment = UISegmentedControl(items: segmentArray)
@@ -30,6 +31,10 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerView.adUnitID = "ca-app-pub-4294379690418901/5357758608"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
         navigationItem.title = "Braille".localized
         navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -52,7 +57,7 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
                 make.leading.trailing.equalToSuperview().inset(32)
-                make.height.equalToSuperview().multipliedBy(0.25)
+                make.height.equalToSuperview().multipliedBy(0.18)
             }
         }
 
@@ -96,7 +101,7 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.subLabel.snp.bottom)
                 make.leading.trailing.equalTo(self.textView)
-                make.height.equalToSuperview().multipliedBy(0.25)
+                make.height.equalToSuperview().multipliedBy(0.18)
             }
         }
         
@@ -117,6 +122,14 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
                 make.height.equalTo(32)
             }
             $0.selectedSegmentIndex = 0
+        }
+        
+        view.add(bannerView) {
+            $0.snp.makeConstraints { make in
+                make.top.equalTo(self.segment.snp.bottom).offset(24)
+                make.leading.trailing.equalTo(self.textView)
+                make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+            }
         }
     }
     
@@ -191,6 +204,5 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     @objc
     func presentSearch(_ sender: UIBarButtonItem) {
         self.present(BrailleTableViewController(), animated: true, completion: nil)
-//        UINavigationController(
     }
 }

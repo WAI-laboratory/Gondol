@@ -39,6 +39,9 @@
 		15E09DDF2767890C00F9B858 /* PeriodicTable.json in Resources */ = {isa = PBXBuildFile; fileRef = 15E09DDE2767890C00F9B858 /* PeriodicTable.json */; };
 		15E09DE127678EB700F9B858 /* ScienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DE027678EB700F9B858 /* ScienceView.swift */; };
 		15EA47FA2771AD8200E47C49 /* MorseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA47F92771AD8200E47C49 /* MorseTableViewController.swift */; };
+		548A8CE601F60B2F3F2FFD72 /* Pods_Gondol_GondolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D67FB842E020399DFD551E2 /* Pods_Gondol_GondolUITests.framework */; };
+		BAF5C783EE5B3A862D02AE04 /* Pods_GondolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E9A5A24808ABF89D581080 /* Pods_GondolTests.framework */; };
+		FB7B49E5E9DF27104537363E /* Pods_Gondol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4824513CB5B1E1AB3CF02E /* Pods_Gondol.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E9A5A24808ABF89D581080 /* Pods_GondolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GondolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12776BE0273F8BC8009F2B02 /* BrailleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleTableViewController.swift; sourceTree = "<group>"; };
 		12776BE2273F8F4E009F2B02 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		12BEC4DE273BA0150025595F /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 		15E09DDE2767890C00F9B858 /* PeriodicTable.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PeriodicTable.json; sourceTree = "<group>"; };
 		15E09DE027678EB700F9B858 /* ScienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceView.swift; sourceTree = "<group>"; };
 		15EA47F92771AD8200E47C49 /* MorseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseTableViewController.swift; sourceTree = "<group>"; };
+		1BF88E97238203E8EEFC6B9E /* Pods-Gondol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gondol.debug.xcconfig"; path = "Target Support Files/Pods-Gondol/Pods-Gondol.debug.xcconfig"; sourceTree = "<group>"; };
+		1D67FB842E020399DFD551E2 /* Pods_Gondol_GondolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gondol_GondolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66970E5A4E507678DCEA2FED /* Pods-GondolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GondolTests.debug.xcconfig"; path = "Target Support Files/Pods-GondolTests/Pods-GondolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A4824513CB5B1E1AB3CF02E /* Pods_Gondol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gondol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A7E8303B942F6D6E3F48BE /* Pods-Gondol-GondolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gondol-GondolUITests.release.xcconfig"; path = "Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E8B01F128E874DB28C14558 /* Pods-GondolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GondolTests.release.xcconfig"; path = "Target Support Files/Pods-GondolTests/Pods-GondolTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1941554A8425EFE319B11D3 /* Pods-Gondol-GondolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gondol-GondolUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFCD72D949CF983173EF7911 /* Pods-Gondol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gondol.release.xcconfig"; path = "Target Support Files/Pods-Gondol/Pods-Gondol.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 				15CD05A9273ABE86005CA1D1 /* AddThen in Frameworks */,
 				15CD05AF273AC885005CA1D1 /* CombineCocoa in Frameworks */,
 				15CD05AC273ABEB2005CA1D1 /* SnapKit in Frameworks */,
+				FB7B49E5E9DF27104537363E /* Pods_Gondol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF5C783EE5B3A862D02AE04 /* Pods_GondolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548A8CE601F60B2F3F2FFD72 /* Pods_Gondol_GondolUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +198,8 @@
 				15CD0589273ABD31005CA1D1 /* GondolTests */,
 				15CD0593273ABD31005CA1D1 /* GondolUITests */,
 				15CD0571273ABD2F005CA1D1 /* Products */,
+				7B3EF418802DAD095FA5BEEC /* Pods */,
+				2D98DEE824B74C43EBBD9A34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +269,29 @@
 			path = Science;
 			sourceTree = "<group>";
 		};
+		2D98DEE824B74C43EBBD9A34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A4824513CB5B1E1AB3CF02E /* Pods_Gondol.framework */,
+				1D67FB842E020399DFD551E2 /* Pods_Gondol_GondolUITests.framework */,
+				08E9A5A24808ABF89D581080 /* Pods_GondolTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B3EF418802DAD095FA5BEEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BF88E97238203E8EEFC6B9E /* Pods-Gondol.debug.xcconfig */,
+				BFCD72D949CF983173EF7911 /* Pods-Gondol.release.xcconfig */,
+				A1941554A8425EFE319B11D3 /* Pods-Gondol-GondolUITests.debug.xcconfig */,
+				82A7E8303B942F6D6E3F48BE /* Pods-Gondol-GondolUITests.release.xcconfig */,
+				66970E5A4E507678DCEA2FED /* Pods-GondolTests.debug.xcconfig */,
+				8E8B01F128E874DB28C14558 /* Pods-GondolTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15CD059A273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "Gondol" */;
 			buildPhases = (
+				8476DADCEEE2D581121F8972 /* [CP] Check Pods Manifest.lock */,
 				15CD056C273ABD2F005CA1D1 /* Sources */,
 				15CD056D273ABD2F005CA1D1 /* Frameworks */,
 				15CD056E273ABD2F005CA1D1 /* Resources */,
+				9D55F6E5C57BE6B963E0192F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15CD059D273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "GondolTests" */;
 			buildPhases = (
+				C47DFD807B93FB8E85BDD4C1 /* [CP] Check Pods Manifest.lock */,
 				15CD0582273ABD31005CA1D1 /* Sources */,
 				15CD0583273ABD31005CA1D1 /* Frameworks */,
 				15CD0584273ABD31005CA1D1 /* Resources */,
@@ -299,9 +342,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15CD05A0273ABD31005CA1D1 /* Build configuration list for PBXNativeTarget "GondolUITests" */;
 			buildPhases = (
+				A248D341E1E2370135BCF575 /* [CP] Check Pods Manifest.lock */,
 				15CD058C273ABD31005CA1D1 /* Sources */,
 				15CD058D273ABD31005CA1D1 /* Frameworks */,
 				15CD058E273ABD31005CA1D1 /* Resources */,
+				A971AEB66B19B253A945AA27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,6 +435,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8476DADCEEE2D581121F8972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gondol-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D55F6E5C57BE6B963E0192F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol/Pods-Gondol-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol/Pods-Gondol-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gondol/Pods-Gondol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A248D341E1E2370135BCF575 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gondol-GondolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A971AEB66B19B253A945AA27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C47DFD807B93FB8E85BDD4C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GondolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15CD056C273ABD2F005CA1D1 /* Sources */ = {
@@ -603,11 +751,12 @@
 		};
 		15CD059B273ABD31005CA1D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BF88E97238203E8EEFC6B9E /* Pods-Gondol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = VZTRDYYN8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gondol/Info.plist;
@@ -621,7 +770,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -632,11 +781,12 @@
 		};
 		15CD059C273ABD31005CA1D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCD72D949CF983173EF7911 /* Pods-Gondol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = VZTRDYYN8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gondol/Info.plist;
@@ -650,7 +800,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -661,6 +811,7 @@
 		};
 		15CD059E273ABD31005CA1D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66970E5A4E507678DCEA2FED /* Pods-GondolTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -686,6 +837,7 @@
 		};
 		15CD059F273ABD31005CA1D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8B01F128E874DB28C14558 /* Pods-GondolTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -711,6 +863,7 @@
 		};
 		15CD05A1273ABD31005CA1D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1941554A8425EFE319B11D3 /* Pods-Gondol-GondolUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -734,6 +887,7 @@
 		};
 		15CD05A2273ABD31005CA1D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A7E8303B942F6D6E3F48BE /* Pods-Gondol-GondolUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

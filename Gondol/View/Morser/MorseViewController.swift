@@ -8,8 +8,9 @@
 import UIKit
 import Combine
 import CombineCocoa
+import GoogleMobileAds
 
-class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, GADBannerViewDelegate {
     private var subscription = Set<AnyCancellable>()
 
     private var label = UILabel()
@@ -21,6 +22,7 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     private var clearButton = UIButton()
     private var textView = UITextView()
     private var viewModel = MorseViewModel()
+    private var bannerView = GADBannerView()
     
     private var segmentArray: [String] = ["Korean", "English"]
     private lazy var segment = UISegmentedControl(items: segmentArray)
@@ -35,6 +37,10 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             guard let self = self else { return }
             self.navigationController?.pushViewController(MorseTableViewController(), animated: true)
         }))
+        bannerView.adUnitID = "ca-app-pub-4294379690418901/5357758608"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
 
 
         view.backgroundColor = .clubhouseBackground
@@ -51,7 +57,7 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
                 make.leading.trailing.equalToSuperview().inset(32)
-                make.height.equalToSuperview().multipliedBy(0.25)
+                make.height.equalToSuperview().multipliedBy(0.18)
             }
         }
         
@@ -95,7 +101,7 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             $0.snp.makeConstraints { make in
                 make.top.equalTo(self.subLabel.snp.bottom)
                 make.leading.trailing.equalTo(self.textView)
-                make.height.equalToSuperview().multipliedBy(0.25)
+                make.height.equalToSuperview().multipliedBy(0.18)
             }
         }
         view.add(fakeLabel) {
@@ -116,6 +122,14 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
                 make.height.equalTo(32)
             }
             $0.selectedSegmentIndex = 0
+        }
+        
+        view.add(bannerView) {
+            $0.snp.makeConstraints { make in
+                make.top.equalTo(self.segment.snp.bottom).offset(24)
+                make.leading.trailing.equalTo(self.textView)
+                make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+            }
         }
     }
     
