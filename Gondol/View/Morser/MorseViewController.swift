@@ -31,6 +31,11 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         navigationItem.title = "Morse".localized
         navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .search, primaryAction: UIAction(handler: {[weak self] action in
+            guard let self = self else { return }
+            self.navigationController?.pushViewController(MorseTableViewController(), animated: true)
+        }))
+
 
         view.backgroundColor = .clubhouseBackground
         textView.delegate = self

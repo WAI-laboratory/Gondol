@@ -1,15 +1,15 @@
 //
-//  BrailleTableViewController.swift
+//  MorseTableViewController.swift
 //  Gondol
 //
-//  Created by JYG on 2021/11/13.
+//  Created by 이용준 on 2021/12/21.
 //
 
 import Foundation
 import UIKit
 
-class BrailleTableViewController: UISearchController {
-    var braille = Braille.sorted { $0.key < $1.key}
+class MorseTableViewController: UISearchController {
+    var morse = morseDictionary.sorted { $0.key < $1.key}
     
     private var filteredArr: [String:String] = [:]
     
@@ -39,7 +39,7 @@ class BrailleTableViewController: UISearchController {
         searchController.searchBar.scopeButtonTitles = ["All", "English", "Korean"]
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        navigationItem.hidesSearchBarWhenScrolling = false        
+        navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         navigationItem.largeTitleDisplayMode = .automatic
 
@@ -51,17 +51,17 @@ class BrailleTableViewController: UISearchController {
     }
 }
 
-extension BrailleTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension MorseTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.isFiltering ? self.filteredArr.count : self.braille.count
+        return self.isFiltering ? self.filteredArr.count : self.morse.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell
-        if let c = tableView.dequeueReusableCell(withIdentifier: "cell") {
+        if let c = tableView.dequeueReusableCell(withIdentifier: "morseCell") {
             cell = c
         } else {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "morseCell")
         }
         if self.isFiltering {
             cell.textLabel?.text = filteredArr[indexPath.row].value
@@ -69,29 +69,29 @@ extension BrailleTableViewController: UITableViewDelegate, UITableViewDataSource
             cell.detailTextLabel?.text = filteredArr[indexPath.row].key
             cell.detailTextLabel?.font = .preferredFont(forTextStyle: .title1)
         } else {
-            cell.textLabel?.text = braille[indexPath.row].value
+            cell.textLabel?.text = morse[indexPath.row].value
             cell.textLabel?.font = .preferredFont(forTextStyle: .title1)
-            cell.detailTextLabel?.text = braille[indexPath.row].key
+            cell.detailTextLabel?.text = morse[indexPath.row].key
             cell.detailTextLabel?.font = .preferredFont(forTextStyle: .title1)
         }
         return cell
     }
 }
 
-extension BrailleTableViewController: UISearchResultsUpdating {
+extension MorseTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         if self.searchController.searchBar.selectedScopeButtonIndex == 0 {
             guard let text = searchController.searchBar.text else {return}
-            self.filteredArr = Braille.filter({ elem in
+            self.filteredArr = morseDictionary.filter({ elem in
                 elem.key.localizedCaseInsensitiveContains(text) == true
                 || elem.value.localizedCaseInsensitiveContains(text)
             })
         } else if self.searchController.searchBar.selectedScopeButtonIndex == 1 {
             guard let text = searchController.searchBar.text else {return}
-            self.filteredArr = englishToBraille.filter { $0.key.localizedCaseInsensitiveContains(text) == true}
+            self.filteredArr = englishToMorse.filter { $0.key.localizedCaseInsensitiveContains(text) == true}
         } else {
             guard let text = searchController.searchBar.text else {return}
-            self.filteredArr = koreanToBraile.filter { $0.key.localizedCaseInsensitiveContains(text) == true}
+            self.filteredArr = koreanToMorse.filter { $0.key.localizedCaseInsensitiveContains(text) == true}
         }
         updateView()
     }

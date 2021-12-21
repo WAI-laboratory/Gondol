@@ -34,7 +34,10 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.prefersLargeTitles = true
 
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.presentSearch(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .search, primaryAction: UIAction(handler: {[weak self] action in
+            guard let self = self else { return }
+            self.navigationController?.pushViewController(BrailleTableViewController(), animated: true)
+        }))
         view.backgroundColor = .clubhouseBackground
         textView.delegate = self
         initView()

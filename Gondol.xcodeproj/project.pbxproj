@@ -38,6 +38,7 @@
 		15E09DDB2767861600F9B858 /* PeriodicTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DDA2767861600F9B858 /* PeriodicTableModel.swift */; };
 		15E09DDF2767890C00F9B858 /* PeriodicTable.json in Resources */ = {isa = PBXBuildFile; fileRef = 15E09DDE2767890C00F9B858 /* PeriodicTable.json */; };
 		15E09DE127678EB700F9B858 /* ScienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E09DE027678EB700F9B858 /* ScienceView.swift */; };
+		15EA47FA2771AD8200E47C49 /* MorseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA47F92771AD8200E47C49 /* MorseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		15E09DDA2767861600F9B858 /* PeriodicTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableModel.swift; sourceTree = "<group>"; };
 		15E09DDE2767890C00F9B858 /* PeriodicTable.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PeriodicTable.json; sourceTree = "<group>"; };
 		15E09DE027678EB700F9B858 /* ScienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceView.swift; sourceTree = "<group>"; };
+		15EA47F92771AD8200E47C49 /* MorseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				12BEC4E0273BB2B30025595F /* MorseViewController.swift */,
 				12BEC4E8273C1C540025595F /* MorseViewModel.swift */,
 				15CD05B5273D6E03005CA1D1 /* Morse.swift */,
+				15EA47F92771AD8200E47C49 /* MorseTableViewController.swift */,
 			);
 			path = Morser;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				12BEC4E4273C14A70025595F /* Color.swift in Sources */,
 				15CD0574273ABD2F005CA1D1 /* AppDelegate.swift in Sources */,
 				12776BE1273F8BC8009F2B02 /* BrailleTableViewController.swift in Sources */,
+				15EA47FA2771AD8200E47C49 /* MorseTableViewController.swift in Sources */,
 				15CD05BA273D77D9005CA1D1 /* BrailleViewModel.swift in Sources */,
 				15E09DD7276784F900F9B858 /* ScienceViewController.swift in Sources */,
 				15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */,
