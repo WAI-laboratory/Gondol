@@ -4,8 +4,8 @@
 target 'Gondol' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'Google-Mobile-Ads-SDK'
-pod 'CombineCocoa'
+#pod 'Google-Mobile-Ads-SDK'
+#pod 'CombineCocoa'
   # Pods for Gondol
 
   target 'GondolTests' do
