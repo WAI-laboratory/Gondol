@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import AppTrackingTransparency
+import UserNotifications
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -56,6 +58,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        requestTrackingAuthorizationIfNotDetermined()
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -73,7 +76,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    private func requestTrackingAuthorizationIfNotDetermined() {
+        let center = UNUserNotificationCenter.current()
+        UNUserNotificationCenter.current().delegate = self
+        center.requestAuthorization(options: [.sound, .alert, .badge], completionHandler: { (granted, error) in
+            if #available(iOS 14.0, *) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                    ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                    })
+                })
+            }})
+        UIApplication.shared.registerForRemoteNotifications()
+    }
 }
-

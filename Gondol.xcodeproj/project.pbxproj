@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		12776BE1273F8BC8009F2B02 /* BrailleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12776BE0273F8BC8009F2B02 /* BrailleTableViewController.swift */; };
 		12776BE3273F8F4E009F2B02 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12776BE2273F8F4E009F2B02 /* Dictionary+Extension.swift */; };
+		128812F227A80653008F3111 /* AddThen in Frameworks */ = {isa = PBXBuildFile; productRef = 128812F127A80653008F3111 /* AddThen */; };
+		128812F427A80658008F3111 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 128812F327A80658008F3111 /* CombineCocoa */; };
+		128812F627A8065D008F3111 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 128812F527A8065D008F3111 /* SnapKit */; };
 		12BEC4DF273BA0150025595F /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4DE273BA0150025595F /* ConverterViewModel.swift */; };
 		12BEC4E1273BB2B30025595F /* MorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4E0273BB2B30025595F /* MorseViewController.swift */; };
 		12BEC4E4273C14A70025595F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BEC4E3273C14A70025595F /* Color.swift */; };
@@ -23,9 +26,6 @@
 		15CD0595273ABD31005CA1D1 /* GondolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0594273ABD31005CA1D1 /* GondolUITests.swift */; };
 		15CD0597273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD0596273ABD31005CA1D1 /* GondolUITestsLaunchTests.swift */; };
 		15CD05A6273ABDDA005CA1D1 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05A5273ABDDA005CA1D1 /* ConverterViewController.swift */; };
-		15CD05A9273ABE86005CA1D1 /* AddThen in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05A8273ABE86005CA1D1 /* AddThen */; };
-		15CD05AC273ABEB2005CA1D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05AB273ABEB2005CA1D1 /* SnapKit */; };
-		15CD05AF273AC885005CA1D1 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 15CD05AE273AC885005CA1D1 /* CombineCocoa */; };
 		15CD05B2273D696D005CA1D1 /* Jamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B1273D696D005CA1D1 /* Jamo.swift */; };
 		15CD05B4273D69A8005CA1D1 /* BrailleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B3273D69A8005CA1D1 /* BrailleViewController.swift */; };
 		15CD05B6273D6E03005CA1D1 /* Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD05B5273D6E03005CA1D1 /* Morse.swift */; };
@@ -114,10 +114,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CD05A9273ABE86005CA1D1 /* AddThen in Frameworks */,
-				15CD05AF273AC885005CA1D1 /* CombineCocoa in Frameworks */,
-				15CD05AC273ABEB2005CA1D1 /* SnapKit in Frameworks */,
 				FB7B49E5E9DF27104537363E /* Pods_Gondol.framework in Frameworks */,
+				128812F627A8065D008F3111 /* SnapKit in Frameworks */,
+				128812F427A80658008F3111 /* CombineCocoa in Frameworks */,
+				128812F227A80653008F3111 /* AddThen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +303,7 @@
 				15CD056C273ABD2F005CA1D1 /* Sources */,
 				15CD056D273ABD2F005CA1D1 /* Frameworks */,
 				15CD056E273ABD2F005CA1D1 /* Resources */,
+				91F7FECA404664D7A2E5E250 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,9 +311,9 @@
 			);
 			name = Gondol;
 			packageProductDependencies = (
-				15CD05A8273ABE86005CA1D1 /* AddThen */,
-				15CD05AB273ABEB2005CA1D1 /* SnapKit */,
-				15CD05AE273AC885005CA1D1 /* CombineCocoa */,
+				128812F127A80653008F3111 /* AddThen */,
+				128812F327A80658008F3111 /* CombineCocoa */,
+				128812F527A8065D008F3111 /* SnapKit */,
 			);
 			productName = Gondol;
 			productReference = 15CD0570273ABD2F005CA1D1 /* Gondol.app */;
@@ -345,6 +346,7 @@
 				15CD058C273ABD31005CA1D1 /* Sources */,
 				15CD058D273ABD31005CA1D1 /* Frameworks */,
 				15CD058E273ABD31005CA1D1 /* Resources */,
+				268A14FE009109700157AB72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,6 +437,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		268A14FE009109700157AB72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gondol-GondolUITests/Pods-Gondol-GondolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8476DADCEEE2D581121F8972 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,6 +474,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F7FECA404664D7A2E5E250 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol/Pods-Gondol-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gondol/Pods-Gondol-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gondol/Pods-Gondol-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A248D341E1E2370135BCF575 /* [CP] Check Pods Manifest.lock */ = {
@@ -734,7 +770,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -764,7 +800,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = yongjunlee.Gondol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -942,20 +978,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		15CD05A8273ABE86005CA1D1 /* AddThen */ = {
+		128812F127A80653008F3111 /* AddThen */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 15CD05A7273ABE86005CA1D1 /* XCRemoteSwiftPackageReference "AddThen" */;
 			productName = AddThen;
 		};
-		15CD05AB273ABEB2005CA1D1 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 15CD05AA273ABEB2005CA1D1 /* XCRemoteSwiftPackageReference "Snapkit" */;
-			productName = SnapKit;
-		};
-		15CD05AE273AC885005CA1D1 /* CombineCocoa */ = {
+		128812F327A80658008F3111 /* CombineCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 15CD05AD273AC885005CA1D1 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
+		};
+		128812F527A8065D008F3111 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15CD05AA273ABEB2005CA1D1 /* XCRemoteSwiftPackageReference "Snapkit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
