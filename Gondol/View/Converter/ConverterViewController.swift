@@ -26,7 +26,9 @@ class ConverterViewController: UIViewController, GADBannerViewDelegate {
     private lazy var segment = UISegmentedControl(items: segmentArray)
     private var bannerView = GADBannerView()
 
+    private let fullAdUnit = "ca-app-pub-4294379690418901/9830139399"
     
+    private var interstitial: GADInterstitialAd?
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .automatic
@@ -38,6 +40,7 @@ class ConverterViewController: UIViewController, GADBannerViewDelegate {
         bannerView.delegate = self
         initView()
         bind()
+        setFullAd()
     }
     
     private func initView() {
@@ -105,5 +108,22 @@ class ConverterViewController: UIViewController, GADBannerViewDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    private func setFullAd() {
+        let request = GADRequest()
+        GADInterstitialAd.load(
+            withAdUnitID: fullAdUnit,
+            request: request,
+            completionHandler: { [weak self] ad, error in
+                self?.interstitial = ad
+                self?.showFullAd()
+            })
+    }
+    
+    private func showFullAd() {
+        if let interstitial = self.interstitial {
+            interstitial.present(fromRootViewController: self)
+        }
     }
 }

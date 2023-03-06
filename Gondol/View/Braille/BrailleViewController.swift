@@ -25,13 +25,16 @@ class BrailleViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     private var viewModel = BrailleViewModel()
     private var bannerView = GADBannerView()
     
+    
+    private let adUnitId = "ca-app-pub-4294379690418901/5357758608"
+    
     private var segmentArray: [String] = ["Korean", "English"]
     private lazy var segment = UISegmentedControl(items: segmentArray)
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerView.adUnitID = "ca-app-pub-4294379690418901/5357758608"
+        bannerView.adUnitID = adUnitId
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         bannerView.delegate = self

@@ -11,6 +11,7 @@ import SnapKit
 import AddThen
 import Combine
 import CombineCocoa
+import GoogleMobileAds
 
 class ScienceViewController: UIViewController {
     private var viewModel = ScienceViewModel()
@@ -44,6 +45,9 @@ class ScienceViewController: UIViewController {
     private let cpkHexColorLabel = UILabel()
     private let periodLabel = UILabel()
     private let groupLabel = UILabel()
+    private let fullAdUnit = "ca-app-pub-4294379690418901/9830139399"
+    
+    private var interstitial: GADInterstitialAd?
     
     
     
@@ -54,6 +58,7 @@ class ScienceViewController: UIViewController {
         view.backgroundColor = .clubhouseBackground
         initView()
         bind()
+        setFullAd()
     }
     
     private func initView() {
@@ -184,6 +189,23 @@ class ScienceViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    private func setFullAd() {
+        let request = GADRequest()
+        GADInterstitialAd.load(
+            withAdUnitID: fullAdUnit,
+            request: request,
+            completionHandler: { [weak self] ad, error in
+                self?.interstitial = ad
+                self?.showFullAd()
+            })
+    }
+    
+    private func showFullAd() {
+        if let interstitial = self.interstitial {
+            interstitial.present(fromRootViewController: self)
+        }
     }
 }
 

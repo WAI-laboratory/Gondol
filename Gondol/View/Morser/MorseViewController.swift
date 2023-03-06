@@ -23,6 +23,9 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     private var textView = UITextView()
     private var viewModel = MorseViewModel()
     private var bannerView = GADBannerView()
+    private let fullAdUnit = "ca-app-pub-4294379690418901/9830139399"
+    
+    private var interstitial: GADInterstitialAd?
     
     private var segmentArray: [String] = ["Korean", "English"]
     private lazy var segment = UISegmentedControl(items: segmentArray)
@@ -47,6 +50,8 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         textView.delegate = self
         initView()
         bind()
+        
+        setFullAd()
     }
     
     private func initView() {
@@ -198,6 +203,26 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
             UIPasteboard.general.string = text
         } else {
             UIPasteboard.general.string = ""
+        }
+    }
+    private func setFullAd() {
+        let request = GADRequest()
+        GADInterstitialAd.load(
+            withAdUnitID: fullAdUnit,
+            request: request,
+            completionHandler: { [weak self] ad, error in
+                if let error {
+                    print("❤️‍🔥 \(error)")
+                }
+                self?.interstitial = ad
+                self?.showFullAd()
+            })
+    }
+    
+    private func showFullAd() {
+        if let interstitial = self.interstitial {
+            print("❤️‍🔥aa")
+            interstitial.present(fromRootViewController: self)
         }
     }
 }
