@@ -58,7 +58,6 @@ class ScienceViewController: UIViewController {
         view.backgroundColor = .clubhouseBackground
         initView()
         bind()
-        setFullAd()
     }
     
     private func initView() {

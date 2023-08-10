@@ -51,7 +51,6 @@ class MorseViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         initView()
         bind()
         
-        setFullAd()
     }
     
     private func initView() {

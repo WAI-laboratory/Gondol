@@ -40,7 +40,6 @@ class ConverterViewController: UIViewController, GADBannerViewDelegate {
         bannerView.delegate = self
         initView()
         bind()
-        setFullAd()
     }
     
     private func initView() {
